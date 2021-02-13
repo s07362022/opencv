@@ -1,0 +1,5 @@
+import pytube
+link ="https://studio.youtube.com/video/f5VSBfyQv7E/edit"
+yt = pytube.YouTube(link)
+stream = yt.streams.first()
+stream.download(SAVE_PATH)
