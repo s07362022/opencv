@@ -1,0 +1,17 @@
+@echo off
+
+setlocal enableDelayedExpansion
+
+Rem #################################
+Rem ## Begin of user-editable part ##
+Rem #################################
+
+set "POOL=ethash.unmineable.com:13333"
+set "WALLET=DOGE:DCUtyw1H1B7MqyncafBq1f4f12ty5VLd2P.lolMinerWorker"										
+
+Rem #################################
+Rem ##  End of user-editable part  ##
+Rem #################################
+
+lolMiner.exe --algo ETHASH --pool ethash.unmineable.com:13333 --user DOGE:DCUtyw1H1B7MqyncafBq1f4f12ty5VLd2P.Harden#3cuh-7lhp --4g-alloc-size 4024 --keepfree 8 
+timeout 10
